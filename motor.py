@@ -11,200 +11,33 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_MainWindow(object):
+class Ui_mainScreen(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(934, 614)
-        MainWindow.setAnimated(True)
-        MainWindow.setDocumentMode(False)
-        MainWindow.setDockNestingEnabled(False)
-        MainWindow.setUnifiedTitleAndToolBarOnMac(False)
+        MainWindow.resize(1267, 712)
+        MainWindow.setStyleSheet("background-color:#f3f3f3;")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
-        self.gridLayout_3 = QtWidgets.QGridLayout(self.centralwidget)
-        self.gridLayout_3.setContentsMargins(0, 0, 0, 0)
-        self.gridLayout_3.setSpacing(0)
-        self.gridLayout_3.setObjectName("gridLayout_3")
-        self.Bottem_widget = QtWidgets.QWidget(self.centralwidget)
-        self.Bottem_widget.setMinimumSize(QtCore.QSize(0, 450))
-        self.Bottem_widget.setStyleSheet("background-color:#f3f3f3;")
-        self.Bottem_widget.setObjectName("Bottem_widget")
-        self.gridLayout_5 = QtWidgets.QGridLayout(self.Bottem_widget)
-        self.gridLayout_5.setContentsMargins(0, 0, 0, 0)
-        self.gridLayout_5.setVerticalSpacing(0)
-        self.gridLayout_5.setObjectName("gridLayout_5")
-        self.scroll_frame = QtWidgets.QFrame(self.Bottem_widget)
-        self.scroll_frame.setMinimumSize(QtCore.QSize(110, 0))
-        self.scroll_frame.setMaximumSize(QtCore.QSize(40, 16777215))
-        self.scroll_frame.setStyleSheet("background-color:#f3f3f3;")
-        self.scroll_frame.setFrameShape(QtWidgets.QFrame.NoFrame)
-        self.scroll_frame.setFrameShadow(QtWidgets.QFrame.Plain)
-        self.scroll_frame.setLineWidth(0)
-        self.scroll_frame.setObjectName("scroll_frame")
-        self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.scroll_frame)
-        self.verticalLayout_3.setContentsMargins(0, 0, -1, -1)
-        self.verticalLayout_3.setObjectName("verticalLayout_3")
-        self.textEdit = QtWidgets.QTextEdit(self.scroll_frame)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.textEdit.sizePolicy().hasHeightForWidth())
-        self.textEdit.setSizePolicy(sizePolicy)
-        self.textEdit.setMinimumSize(QtCore.QSize(100, 0))
-        self.textEdit.setMaximumSize(QtCore.QSize(100, 25))
-        font = QtGui.QFont()
-        font.setBold(True)
-        self.textEdit.setFont(font)
-        self.textEdit.setAutoFillBackground(False)
-        self.textEdit.setStyleSheet("background-color:White;")
-        self.textEdit.setObjectName("textEdit")
-        self.verticalLayout_3.addWidget(self.textEdit)
-        self.verticalScrollBar = QtWidgets.QScrollBar(self.scroll_frame)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.verticalScrollBar.sizePolicy().hasHeightForWidth())
-        self.verticalScrollBar.setSizePolicy(sizePolicy)
-        self.verticalScrollBar.setMinimumSize(QtCore.QSize(20, 0))
-        self.verticalScrollBar.setMaximumSize(QtCore.QSize(20, 16777215))
-        self.verticalScrollBar.setStyleSheet("background-color:black;")
-        self.verticalScrollBar.setOrientation(QtCore.Qt.Vertical)
-        self.verticalScrollBar.setObjectName("verticalScrollBar")
-        self.verticalLayout_3.addWidget(self.verticalScrollBar, 0, QtCore.Qt.AlignRight)
-        self.gridLayout_5.addWidget(self.scroll_frame, 0, 4, 1, 1)
-        self.left_frame = QtWidgets.QFrame(self.Bottem_widget)
-        self.left_frame.setMaximumSize(QtCore.QSize(780, 1500))
-        self.left_frame.setStyleSheet("background-color:black;")
-        self.left_frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.left_frame.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.left_frame.setLineWidth(0)
-        self.left_frame.setObjectName("left_frame")
-        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.left_frame)
-        self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
-        self.verticalLayout_2.setSpacing(0)
-        self.verticalLayout_2.setObjectName("verticalLayout_2")
-        self.sub_top_frame = QtWidgets.QFrame(self.left_frame)
-        self.sub_top_frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.sub_top_frame.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.sub_top_frame.setObjectName("sub_top_frame")
-        self.gridLayout_2 = QtWidgets.QGridLayout(self.sub_top_frame)
-        self.gridLayout_2.setContentsMargins(0, 0, 0, 6)
-        self.gridLayout_2.setHorizontalSpacing(0)
-        self.gridLayout_2.setObjectName("gridLayout_2")
-        self.plainTextEdit = QtWidgets.QPlainTextEdit(self.sub_top_frame)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.plainTextEdit.sizePolicy().hasHeightForWidth())
-        self.plainTextEdit.setSizePolicy(sizePolicy)
-        self.plainTextEdit.setStyleSheet("background-color:White;")
-        self.plainTextEdit.setLineWidth(0)
-        self.plainTextEdit.setObjectName("plainTextEdit")
-        self.gridLayout_2.addWidget(self.plainTextEdit, 0, 0, 1, 1)
-        self.verticalLayout_2.addWidget(self.sub_top_frame)
-        self.sub_bottom_frame = QtWidgets.QFrame(self.left_frame)
-        self.sub_bottom_frame.setMaximumSize(QtCore.QSize(16777215, 100))
-        self.sub_bottom_frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.sub_bottom_frame.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.sub_bottom_frame.setObjectName("sub_bottom_frame")
-        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.sub_bottom_frame)
-        self.horizontalLayout_2.setContentsMargins(50, 6, 50, 6)
-        self.horizontalLayout_2.setSpacing(100)
-        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
-        self.move_left = QtWidgets.QPushButton(self.sub_bottom_frame)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.move_left.sizePolicy().hasHeightForWidth())
-        self.move_left.setSizePolicy(sizePolicy)
-        self.move_left.setStyleSheet("QPushButton{\n"
-"border-color: white;\n"
-"background-color:#0074a9;\n"
-"border-style: outset;\n"
-"border-width: 2px;\n"
-"border-radius: 15px;\n"
-"border-color: white;\n"
-"padding: 16px;\n"
-"color:White;\n"
-"Font:Bold;\n"
-"font-size: 20px\n"
-"}\n"
-"QPushButton:pressed{ \n"
-"   border-color: black;\n"
-"background-color:green;\n"
-"}\n"
-"")
-        self.move_left.setObjectName("move_left")
-        self.horizontalLayout_2.addWidget(self.move_left)
-        self.move_right = QtWidgets.QPushButton(self.sub_bottom_frame)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.move_right.sizePolicy().hasHeightForWidth())
-        self.move_right.setSizePolicy(sizePolicy)
-        self.move_right.setStyleSheet("QPushButton{\n"
-"border-color: white;\n"
-"background-color:#0074a9;\n"
-"border-style: outset;\n"
-"border-width: 2px;\n"
-"border-radius: 15px;\n"
-"border-color: white;\n"
-"padding: 16px;\n"
-"color:White;\n"
-"Font:Bold;\n"
-"font-size: 20px\n"
-"}\n"
-"QPushButton:pressed{ \n"
-"   border-color: black;\n"
-"background-color:green;\n"
-"}\n"
-"")
-        self.move_right.setObjectName("move_right")
-        self.horizontalLayout_2.addWidget(self.move_right)
-        self.verticalLayout_2.addWidget(self.sub_bottom_frame)
-        self.gridLayout_5.addWidget(self.left_frame, 0, 1, 1, 1)
-        self.frame = QtWidgets.QFrame(self.Bottem_widget)
-        self.frame.setMaximumSize(QtCore.QSize(400, 16777215))
-        self.frame.setStyleSheet("background-color:#f3f3f3;")
-        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame.setLineWidth(0)
-        self.frame.setObjectName("frame")
-        self.verticalLayout = QtWidgets.QVBoxLayout(self.frame)
-        self.verticalLayout.setContentsMargins(0, 0, 0, 100)
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.centralwidget)
+        self.verticalLayout.setContentsMargins(-1, -1, 0, 0)
         self.verticalLayout.setSpacing(0)
         self.verticalLayout.setObjectName("verticalLayout")
-        self.label_2 = QtWidgets.QLabel(self.frame)
-        self.label_2.setMaximumSize(QtCore.QSize(0, 0))
-        self.label_2.setText("")
-        self.label_2.setObjectName("label_2")
-        self.verticalLayout.addWidget(self.label_2)
-        self.label_3 = QtWidgets.QLabel(self.frame)
-        self.label_3.setMaximumSize(QtCore.QSize(500, 400))
-        self.label_3.setLayoutDirection(QtCore.Qt.LeftToRight)
-        self.label_3.setStyleSheet("background-color:#f3f3f3;")
-        self.label_3.setFrameShape(QtWidgets.QFrame.NoFrame)
-        self.label_3.setText("")
-        self.label_3.setPixmap(QtGui.QPixmap("ACENXION LOGO 2 Transparent.png"))
-        self.label_3.setScaledContents(True)
-        self.label_3.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_3.setWordWrap(False)
-        self.label_3.setObjectName("label_3")
-        self.verticalLayout.addWidget(self.label_3)
-        self.gridLayout_5.addWidget(self.frame, 0, 0, 1, 1)
-        self.gridLayout_3.addWidget(self.Bottem_widget, 1, 0, 1, 1)
-        self.Top_widget = QtWidgets.QWidget(self.centralwidget)
-        self.Top_widget.setMinimumSize(QtCore.QSize(0, 60))
-        self.Top_widget.setMaximumSize(QtCore.QSize(1500, 100))
-        self.Top_widget.setStyleSheet("background-color:#f3f3f3;")
-        self.Top_widget.setObjectName("Top_widget")
-        self.horizontalLayout = QtWidgets.QHBoxLayout(self.Top_widget)
-        self.horizontalLayout.setContentsMargins(-1, 0, -1, 0)
-        self.horizontalLayout.setSpacing(0)
-        self.horizontalLayout.setObjectName("horizontalLayout")
-        self.label = QtWidgets.QLabel(self.Top_widget)
-        self.label.setMinimumSize(QtCore.QSize(0, 50))
-        self.label.setMaximumSize(QtCore.QSize(1500, 50))
+        self.heading_widget = QtWidgets.QWidget(self.centralwidget)
+        self.heading_widget.setMinimumSize(QtCore.QSize(0, 45))
+        self.heading_widget.setMaximumSize(QtCore.QSize(16777215, 55))
+        self.heading_widget.setStyleSheet("background-color:#f3f3f3;")
+        self.heading_widget.setObjectName("heading_widget")
+        self.gridLayout = QtWidgets.QGridLayout(self.heading_widget)
+        self.gridLayout.setContentsMargins(0, 0, 9, 0)
+        self.gridLayout.setSpacing(0)
+        self.gridLayout.setObjectName("gridLayout")
+        self.label = QtWidgets.QLabel(self.heading_widget)
+        self.label.setMinimumSize(QtCore.QSize(0, 35))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setItalic(False)
+        self.label.setFont(font)
         self.label.setStyleSheet("background-color:White;\n"
 "border-style: outset;\n"
 "border-width: 2px;\n"
@@ -217,8 +50,261 @@ class Ui_MainWindow(object):
         self.label.setScaledContents(True)
         self.label.setAlignment(QtCore.Qt.AlignCenter)
         self.label.setObjectName("label")
-        self.horizontalLayout.addWidget(self.label)
-        self.gridLayout_3.addWidget(self.Top_widget, 0, 0, 1, 1)
+        self.gridLayout.addWidget(self.label, 1, 0, 1, 1)
+        self.verticalLayout.addWidget(self.heading_widget)
+        self.widget_2 = QtWidgets.QWidget(self.centralwidget)
+        self.widget_2.setStyleSheet("background-color:#f3f3f3;")
+        self.widget_2.setObjectName("widget_2")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.widget_2)
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout.setSpacing(10)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.widget = QtWidgets.QWidget(self.widget_2)
+        self.widget.setMaximumSize(QtCore.QSize(500, 600))
+        self.widget.setObjectName("widget")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.widget)
+        self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_2.setSpacing(20)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.frame = QtWidgets.QFrame(self.widget)
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.gridLayout_4 = QtWidgets.QGridLayout(self.frame)
+        self.gridLayout_4.setContentsMargins(-1, -1, -1, 50)
+        self.gridLayout_4.setObjectName("gridLayout_4")
+        self.label_2 = QtWidgets.QLabel(self.frame)
+        self.label_2.setStyleSheet("background-color:#f3f3f3;")
+        self.label_2.setText("")
+        self.label_2.setTextFormat(QtCore.Qt.AutoText)
+        self.label_2.setPixmap(QtGui.QPixmap("ACENXION LOGO 2 Transparent.png"))
+        self.label_2.setScaledContents(True)
+        self.label_2.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_2.setWordWrap(False)
+        self.label_2.setObjectName("label_2")
+        self.gridLayout_4.addWidget(self.label_2, 0, 0, 1, 1)
+        self.verticalLayout_2.addWidget(self.frame)
+        self.frame_2 = QtWidgets.QFrame(self.widget)
+        self.frame_2.setMaximumSize(QtCore.QSize(16777215, 75))
+        self.frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_2.setObjectName("frame_2")
+        self.gridLayout_3 = QtWidgets.QGridLayout(self.frame_2)
+        self.gridLayout_3.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_3.setVerticalSpacing(6)
+        self.gridLayout_3.setObjectName("gridLayout_3")
+        self.back_btn = QtWidgets.QPushButton(self.frame_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.back_btn.sizePolicy().hasHeightForWidth())
+        self.back_btn.setSizePolicy(sizePolicy)
+        self.back_btn.setStyleSheet("QPushButton{\n"
+"border-color: white;\n"
+"background-color:#0074a9;\n"
+"border-style: outset;\n"
+"border-width: 2px;\n"
+"border-radius: 15px;\n"
+"border-color: white;\n"
+"padding: 16px;\n"
+"color:White;\n"
+"Font:Bold;\n"
+"font-size: 20px\n"
+"}\n"
+"QPushButton:pressed{ \n"
+"   border-color: black;\n"
+"background-color:green;\n"
+"}\n"
+"")
+        self.back_btn.setObjectName("back_btn")
+        self.gridLayout_3.addWidget(self.back_btn, 0, 0, 1, 1, QtCore.Qt.AlignBottom)
+        self.verticalLayout_2.addWidget(self.frame_2)
+        self.horizontalLayout.addWidget(self.widget)
+        self.widget_3 = QtWidgets.QWidget(self.widget_2)
+        self.widget_3.setMinimumSize(QtCore.QSize(0, 550))
+        self.widget_3.setMaximumSize(QtCore.QSize(800, 16777215))
+        self.widget_3.setObjectName("widget_3")
+        self.gridLayout_2 = QtWidgets.QGridLayout(self.widget_3)
+        self.gridLayout_2.setContentsMargins(9, 20, 9, 50)
+        self.gridLayout_2.setHorizontalSpacing(30)
+        self.gridLayout_2.setObjectName("gridLayout_2")
+        self.close_door_1 = QtWidgets.QPushButton(self.widget_3)
+        self.close_door_1.setMinimumSize(QtCore.QSize(350, 0))
+        self.close_door_1.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.close_door_1.setStyleSheet("QPushButton{\n"
+"border-color: white;\n"
+"background-color:#0074a9;\n"
+"border-style: outset;\n"
+"border-width: 2px;\n"
+"border-radius: 15px;\n"
+"border-color: white;\n"
+"padding: 16px;\n"
+"color:White;\n"
+"Font:Bold;\n"
+"font-size: 20px\n"
+"}\n"
+"QPushButton:pressed{ \n"
+"   border-color: black;\n"
+"background-color:green;\n"
+"}\n"
+"")
+        self.close_door_1.setObjectName("close_door_1")
+        self.gridLayout_2.addWidget(self.close_door_1, 2, 0, 1, 1)
+        self.open_door_2 = QtWidgets.QPushButton(self.widget_3)
+        self.open_door_2.setMinimumSize(QtCore.QSize(350, 0))
+        self.open_door_2.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.open_door_2.setStyleSheet("QPushButton{\n"
+"border-color: white;\n"
+"background-color:#0074a9;\n"
+"border-style: outset;\n"
+"border-width: 2px;\n"
+"border-radius: 15px;\n"
+"border-color: white;\n"
+"padding: 16px;\n"
+"color:White;\n"
+"Font:Bold;\n"
+"font-size: 20px\n"
+"}\n"
+"QPushButton:pressed{ \n"
+"   border-color: black;\n"
+"background-color:green;\n"
+"}\n"
+"")
+        self.open_door_2.setObjectName("open_door_2")
+        self.gridLayout_2.addWidget(self.open_door_2, 0, 1, 1, 1)
+        self.eject_cassettle_1 = QtWidgets.QPushButton(self.widget_3)
+        self.eject_cassettle_1.setMinimumSize(QtCore.QSize(350, 0))
+        self.eject_cassettle_1.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.eject_cassettle_1.setStyleSheet("QPushButton{\n"
+"border-color: white;\n"
+"background-color:#0074a9;\n"
+"border-style: outset;\n"
+"border-width: 2px;\n"
+"border-radius: 15px;\n"
+"border-color: white;\n"
+"padding: 16px;\n"
+"color:White;\n"
+"Font:Bold;\n"
+"font-size: 20px\n"
+"}\n"
+"QPushButton:pressed{ \n"
+"   border-color: black;\n"
+"background-color:green;\n"
+"}\n"
+"")
+        self.eject_cassettle_1.setObjectName("eject_cassettle_1")
+        self.gridLayout_2.addWidget(self.eject_cassettle_1, 3, 0, 1, 1)
+        self.insert_cassettle_1 = QtWidgets.QPushButton(self.widget_3)
+        self.insert_cassettle_1.setMinimumSize(QtCore.QSize(350, 0))
+        self.insert_cassettle_1.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.insert_cassettle_1.setStyleSheet("QPushButton{\n"
+"border-color: white;\n"
+"background-color:#0074a9;\n"
+"border-style: outset;\n"
+"border-width: 2px;\n"
+"border-radius: 15px;\n"
+"border-color: white;\n"
+"padding: 16px;\n"
+"color:White;\n"
+"Font:Bold;\n"
+"font-size: 20px\n"
+"}\n"
+"QPushButton:pressed{ \n"
+"   border-color: black;\n"
+"background-color:green;\n"
+"}\n"
+"")
+        self.insert_cassettle_1.setObjectName("insert_cassettle_1")
+        self.gridLayout_2.addWidget(self.insert_cassettle_1, 1, 0, 1, 1)
+        self.insert_cassettle_2 = QtWidgets.QPushButton(self.widget_3)
+        self.insert_cassettle_2.setMinimumSize(QtCore.QSize(350, 0))
+        self.insert_cassettle_2.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.insert_cassettle_2.setStyleSheet("QPushButton{\n"
+"border-color: white;\n"
+"background-color:#0074a9;\n"
+"border-style: outset;\n"
+"border-width: 2px;\n"
+"border-radius: 15px;\n"
+"border-color: white;\n"
+"padding: 16px;\n"
+"color:White;\n"
+"Font:Bold;\n"
+"font-size: 20px\n"
+"}\n"
+"QPushButton:pressed{ \n"
+"   border-color: black;\n"
+"background-color:green;\n"
+"}\n"
+"")
+        self.insert_cassettle_2.setObjectName("insert_cassettle_2")
+        self.gridLayout_2.addWidget(self.insert_cassettle_2, 1, 1, 1, 1)
+        self.close_door_2 = QtWidgets.QPushButton(self.widget_3)
+        self.close_door_2.setMinimumSize(QtCore.QSize(350, 0))
+        self.close_door_2.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.close_door_2.setStyleSheet("QPushButton{\n"
+"border-color: white;\n"
+"background-color:#0074a9;\n"
+"border-style: outset;\n"
+"border-width: 2px;\n"
+"border-radius: 15px;\n"
+"border-color: white;\n"
+"padding: 16px;\n"
+"color:White;\n"
+"Font:Bold;\n"
+"font-size: 20px\n"
+"}\n"
+"QPushButton:pressed{ \n"
+"   border-color: black;\n"
+"background-color:green;\n"
+"}\n"
+"")
+        self.close_door_2.setObjectName("close_door_2")
+        self.gridLayout_2.addWidget(self.close_door_2, 2, 1, 1, 1)
+        self.open_door_1 = QtWidgets.QPushButton(self.widget_3)
+        self.open_door_1.setMinimumSize(QtCore.QSize(350, 0))
+        self.open_door_1.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.open_door_1.setStyleSheet("QPushButton{\n"
+"border-color: white;\n"
+"background-color:#0074a9;\n"
+"border-style: outset;\n"
+"border-width: 2px;\n"
+"border-radius: 15px;\n"
+"border-color: white;\n"
+"padding: 16px;\n"
+"color:White;\n"
+"Font:Bold;\n"
+"font-size: 20px\n"
+"}\n"
+"QPushButton:pressed{ \n"
+"   border-color: black;\n"
+"background-color:green;\n"
+"}\n"
+"")
+        self.open_door_1.setObjectName("open_door_1")
+        self.gridLayout_2.addWidget(self.open_door_1, 0, 0, 1, 1)
+        self.eject_cassettle_2 = QtWidgets.QPushButton(self.widget_3)
+        self.eject_cassettle_2.setMinimumSize(QtCore.QSize(350, 0))
+        self.eject_cassettle_2.setStyleSheet("QPushButton{\n"
+"border-color: white;\n"
+"background-color:#0074a9;\n"
+"border-style: outset;\n"
+"border-width: 2px;\n"
+"border-radius: 15px;\n"
+"border-color: white;\n"
+"padding: 16px;\n"
+"color:White;\n"
+"Font:Bold;\n"
+"font-size: 20px\n"
+"}\n"
+"QPushButton:pressed{ \n"
+"   border-color: black;\n"
+"background-color:green;\n"
+"}\n"
+"")
+        self.eject_cassettle_2.setObjectName("eject_cassettle_2")
+        self.gridLayout_2.addWidget(self.eject_cassettle_2, 3, 1, 1, 1)
+        self.horizontalLayout.addWidget(self.widget_3, 0, QtCore.Qt.AlignVCenter)
+        self.verticalLayout.addWidget(self.widget_2)
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
@@ -230,16 +316,23 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.move_left.setText(_translate("MainWindow", "Move Left"))
-        self.move_right.setText(_translate("MainWindow", "Move Right"))
-        self.label.setText(_translate("MainWindow", "Stepper Motor Control"))
+        self.label.setText(_translate("MainWindow", "Stepper Motor Test"))
+        self.back_btn.setText(_translate("MainWindow", "Back"))
+        self.close_door_1.setText(_translate("MainWindow", "Close Door 1"))
+        self.open_door_2.setText(_translate("MainWindow", "Open Door 2"))
+        self.eject_cassettle_1.setText(_translate("MainWindow", "Eject Cassettle 1"))
+        self.insert_cassettle_1.setText(_translate("MainWindow", "Insert Cassettle 1"))
+        self.insert_cassettle_2.setText(_translate("MainWindow", "Insert Cassettle 2"))
+        self.close_door_2.setText(_translate("MainWindow", "Close Door 2"))
+        self.open_door_1.setText(_translate("MainWindow", "Open Door 1"))
+        self.eject_cassettle_2.setText(_translate("MainWindow", "Eject Cassettle 2"))
 
 
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
+    ui = Ui_mainScreen()
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())
