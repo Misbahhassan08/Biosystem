@@ -37,10 +37,11 @@ class Main(threading.Thread):
             self.brightness = self.parsed_json['Brightness']
             print(self.brightness)
             #time.sleep(0.01)
+        pass    # end of om_message function
     def func(self):
         while True:
             if self.msgTopic == "biogas_/detectorFlow_/test_/":
-                sensor=0
+                sensor=4
                 while sensor < 5:
                     startTime = datetime.datetime.now() # get start time
                     t1 = startTime.timestamp()
