@@ -1,5 +1,4 @@
 from datetime import datetime
-from config import *
 import time
 import csv
 
@@ -53,10 +52,6 @@ class BasicEntryAndPrepForReading:
                     file.write(TempTitle)
                     file.write(TempHeader)
                     file.close()
-                #-----------------------------------------
-                # ---- Prep for first Reading
-                #-----------------------------------------                  
-                full_test_str = ""     #- Clear the string which will store data
         pass   # end of makeCsvFile function          
     pass   # end of basicEntryAndPrepForReading class
             
